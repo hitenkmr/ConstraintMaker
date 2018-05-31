@@ -119,6 +119,7 @@ extension UIView
     
     func prepareForNewConstraints(block : ((UIView?) -> ())!)
     {
+        //If you want to use Auto Layout to dynamically calculate the size and position of your view, you must set 'translatesAutoresizingMaskIntoConstraints' property to false
         self.translatesAutoresizingMaskIntoConstraints = false
         block(self)
     }
